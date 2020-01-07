@@ -223,7 +223,7 @@ int main() {
 	//=====================================================================================================
 	//Task9. The user enter the number. Program display the mirror of this number.
 
-		int number, digits,	mirror_number=0;
+		/*int number, digits;
 
 		cout << "enter a number: ";
 		cin >> number;
@@ -231,7 +231,7 @@ int main() {
 		for (int i = number; i > 0; i /= 10){
 			digits = i % 10;
 			cout << digits;
-		}
+		}*/
 
 	//=====================================================================================================
 	//Task 10. Program display the sum of these numbers. 
@@ -251,7 +251,25 @@ int main() {
 
 	//cout << endl<< sum;
 
-		
+	//=====================================================================================================
+	//Task 11. On the first day, the snail crawled 15 cm. 
+	//Every next day it crawled 2 cm further.
+	//Determine what total distance the snail crawls in N days.
+
+	/*int days, road_distance = 15, sum = 0;
+
+	cout << "Enter the number of the days: ";
+	cin >> days;
+
+	for (int i = 0; i < days; i++)
+	{
+		sum += road_distance + i * 2;
+	}
+
+	cout << endl << "Snail crawled " << sum << "cm";*/
+
+	
+
 
 
 	cout << "\n\n";
