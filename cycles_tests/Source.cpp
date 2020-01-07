@@ -196,7 +196,7 @@ int main() {
 	//=====================================================================================================
 	//Task8. There are several boxes in warehouse. We have to clean the warehouse. 
 	//Cars take turns approaching the warehouse and pick up the boxes. Determine how much drove up to the warehouse.
-	int count, boxes, car_with_box, i;
+	/*int count, boxes, car_with_box, i;
 
 	count = 0;
 
@@ -218,8 +218,40 @@ int main() {
 	}
 	else {
 		cout << "\nThere are no boxes at the warehous.";
-	}
+	}*/
 
+	//=====================================================================================================
+	//Task9. The user enter the number. Program display the mirror of this number.
+
+		int number, digits,	mirror_number=0;
+
+		cout << "enter a number: ";
+		cin >> number;
+
+		for (int i = number; i > 0; i /= 10){
+			digits = i % 10;
+			cout << digits;
+		}
+
+	//=====================================================================================================
+	//Task 10. Program display the sum of these numbers. 
+
+	//int  num, sum = 0, digits = 0;
+	//
+	//cout << "Enter the number: ";	
+	//cin >> num;
+	//
+	//num *= 10;
+
+	//for (int i = num; i > 0; i /= 10)
+	//{
+	//	digits = i % 10;			//write one number in a variable
+	//	sum += digits;
+	//}
+
+	//cout << endl<< sum;
+
+		
 
 
 	cout << "\n\n";
