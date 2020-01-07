@@ -268,7 +268,70 @@ int main() {
 
 	cout << endl << "Snail crawled " << sum << "cm";*/
 
+	//=====================================================================================================
+	//Task 12. the student tossed a coin 9 times.
+	//If as a result the number of coins dropped out by the “eagle” side (1) was an even number
+	//he made a decision in the positive direction, otherwise (0) in the negative.
 	
+	/*int coin=0, sum=0;
+
+	for (int i = 1; i <= 9; i++)
+	{
+		cout << "Toss a coin: ";
+		cin >> coin;
+		sum += coin;
+	}
+	if (sum % 2 == 0) cout << "Yes!";
+	else cout << "No";*/
+
+	//=====================================================================================================
+	//Task 13. Calendar
+
+	int month, first_day, value_month, count=0, weekends=0;
+
+	cout << "Enter the number of the month: ";
+	cin >> month;
+
+	cout << "Enter the number of the first day ";
+	cin >> first_day;
+
+	switch (month)
+	{
+	case 1: cout << "\n\n\t\t\tJanuary"; value_month = 31; break;
+	case 2: cout << "\n\n\t\t\tFebruary"; value_month = 28; break;
+	case 3: cout << "\n\n\t\t\tMarch"; value_month = 31; break;
+	case 4: cout << "\n\n\t\t\tApril"; value_month = 30; break;
+	case 5: cout << "\n\n\t\t\tMay"; value_month = 31; break;
+	case 6: cout << "\n\n\t\t\tJune"; value_month = 30; break;
+	case 7: cout << "\n\n\t\t\tJuly"; value_month = 31; break;
+	case 8: cout << "\n\n\t\t\tAugust"; value_month = 31; break;
+	case 9: cout << "\n\n\t\t\tSeptember"; value_month = 30; break;
+	case 10: cout << "\n\n\t\t\tOctober"; value_month = 31; break;
+	case 11: cout << "\n\n\t\t\tNovember"; value_month = 30; break;
+	case 12: cout << "\n\n\t\t\tDecember"; value_month = 31; break;
+
+	default: cout<<"Uknown month";	break;
+	}
+
+	cout << "\n\n\tMo\tTu\tWe\tTh\tFr\tSa\tSu\t\n";
+
+	for (int i = 1; i <= first_day-1; i++)
+	{
+		cout << "\t_";
+		count++;
+	}
+	cout << "\b";
+	for (int i = 1; i <= value_month; i++)
+	{
+		if ((count+i-1)% 7 == 0)
+		{
+			cout << "\n";
+		}
+		cout << "\t" << i;
+		weekends += ((count + i - 1) % 7 == 0) + ((count + i + 1) % 7 == 0);
+	}
+
+	cout << "\n\nWeekends: " << weekends;
 
 
 
